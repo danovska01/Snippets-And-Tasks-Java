@@ -1,3 +1,4 @@
+package Blockchain_Network_4;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -69,7 +70,7 @@ public class blocks {
     }
     public blocks() {
         chain = new ArrayList<block>();
-        chain.add(new block(0,"1/03/2016","Genisis block",0));
+        chain.add(new block(0,"1/03/2016","Genisis Blockchain_Network_4.block",0));
     }
     public void addBlock(block newBlock)
     {
@@ -105,7 +106,7 @@ public class blocks {
     {
         System.out.println(" ");
         blocks a=new blocks();
-        a.addBlock(new block(1, "1/03/2016", "Genisis block", 0));
+        a.addBlock(new block(1, "1/03/2016", "Genisis Blockchain_Network_4.block", 0));
         a.addBlock(new block(2, "5/03/2016", "", 45));
         a.addBlock(new block(3, "7/04/2016", "", 56));
         a.chain.get(1).currency=450.7f;

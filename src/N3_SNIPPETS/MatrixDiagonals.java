@@ -8,7 +8,7 @@ public class MatrixDiagonals {
                 {7, 8, 9}
         };
 
-        System.out.println("Main Diagonal:");
+        System.out.println("Blockchain_Network_4.Main Diagonal:");
         printMainDiagonal(matrix);
 
         System.out.println("\nSecondary Diagonal:");
