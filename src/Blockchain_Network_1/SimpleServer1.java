@@ -1,14 +1,14 @@
-package Blockchain_Network_3;
+package Blockchain_Network_1;
 
-import java.io.IOException;
-import java.io.OutputStream;
+import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.sql.*;
 import java.util.Properties;
 
-public class SimpleServer {
+public class SimpleServer1 {
     static Blockchain blockchain = new Blockchain();
+
     public static void main(String[] args) throws SQLException {
 
         //CONNECT TO THE DATABASE BY SETTING USER, PASSWORD, TABLE NAME
@@ -33,7 +33,7 @@ public class SimpleServer {
         }
 
 
-        int port = 8001;
+        int port = 8002;
 
         try {
             ServerSocket serverSocket = new ServerSocket(port);
@@ -54,15 +54,20 @@ public class SimpleServer {
         }
     }
 
-    private static void handleRequest(Socket clientSocket) throws IOException {
-        // Read the client's request (optional)
-        // You can read and process the request headers or request body if needed
+    private static void handleRequest(Socket clientSocket) throws IOException, SQLException {
+        // Read the client's request
+        String request = readRequest(clientSocket);
+        String responseContent;
 
-
-        String blockchainOnServer = blockchain.getListOfBlocksInBlockchain().toString();
-
-        // Prepare the response content
-        String responseContent = "<html><body><h1>" + blockchainOnServer + "</h1></body></html>";
+        if (request.startsWith("GET /Blockchain_Network_4.blocks/all")) {
+            responseContent = getAllBlocksResponse();
+        } else if (request.startsWith("GET /block/")) {
+            String hash = getHashFromRequest(request);
+            responseContent = getBlockByHashResponse(hash);
+        } else {
+            // Invalid request
+            responseContent = "Invalid request!";
+        }
 
         // Prepare the response headers
         String responseHeaders = "HTTP/1.1 200 OK\r\n" +
@@ -76,6 +81,57 @@ public class SimpleServer {
         outputStream.write(responseHeaders.getBytes());
         outputStream.write(responseContent.getBytes());
         outputStream.flush();
+    }
+
+    private static String readRequest(Socket clientSocket) throws IOException {
+        StringBuilder requestBuilder = new StringBuilder();
+        InputStream inputStream = clientSocket.getInputStream();
+        BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
+
+        String line;
+        while ((line = reader.readLine()) != null && !line.isEmpty()) {
+            requestBuilder.append(line).append("\r\n");
+        }
+
+        return requestBuilder.toString();
+    }
+
+    private static String getAllBlocksResponse() {
+        StringBuilder responseBuilder = new StringBuilder();
+        responseBuilder.append("<html><body><h1>All Blocks</h1>");
+
+        for (Block block : blockchain.getListOfBlocksInBlockchain()) {
+            responseBuilder.append(block.toString()).append("<br>");
+            System.out.println(block);
+        }
+
+        responseBuilder.append("</body></html>");
+
+        return responseBuilder.toString();
+    }
+
+    private static String getBlockByHashResponse(String hash) {
+        StringBuilder responseBuilder = new StringBuilder();
+        responseBuilder.append("<html><body>");
+
+        for (Block block : blockchain.getListOfBlocksInBlockchain()) {
+            if (block.getBlockHash().equals(hash)) {
+                responseBuilder.append("<h1>Block with Hash: ").append(hash).append("</h1>");
+                responseBuilder.append(block.toString()).append("<br>");
+                break;
+            }
+        }
+
+        responseBuilder.append("</body></html>");
+
+        return responseBuilder.toString();
+    }
+
+    private static String getHashFromRequest(String request) {
+        int startIndex = request.indexOf("/block/hash/") + "/block/hash/".length();
+        int endIndex = request.indexOf(" HTTP/1.1");
+
+        return request.substring(startIndex, endIndex);
     }
 
     private static String[] getTransactionsIntoArray(ResultSet rs) throws SQLException {

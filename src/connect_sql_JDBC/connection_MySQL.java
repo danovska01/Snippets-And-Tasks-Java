@@ -1,4 +1,4 @@
-package connect_sql;
+package connect_sql_JDBC;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -6,9 +6,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Properties;
-import java.util.Scanner;
 
-public class Main {
+public class connection_MySQL {
     public static void main(String[] args) throws SQLException {
 //        Scanner sc = new Scanner(System.in);
 //        System.out.print("Enter username default (root): ");

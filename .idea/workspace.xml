@@ -1,13 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5655ffb2-6f5d-4eb7-8d51-16861cf8fd1d" name="Changes" comment="some basic snippets">
-      <change afterPath="$PROJECT_DIR$/src/N5_TEST_TASKS_IT/_S6_Card_Strength_Program.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/N5_TEST_TASKS_IT/_S6_Labyrinth_Escape.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/N5_TEST_TASKS_IT/_S6_Longest_Common_Word.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/N5_TEST_TASKS_IT/_S6_Sum_Divisible_By_Three_Recursion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/N5_TEST_TASKS_IT/_S6_Word_Comparison.java" afterDir="false" />
+    <list default="true" id="5655ffb2-6f5d-4eb7-8d51-16861cf8fd1d" name="Changes" comment="tasks it">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mongo_java_driver_3_12_14.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_j_8_0_331.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/connect_sql_JDBC/connection_MongoDB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/connect_sql_JDBC/connection_PostgreSQL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Snippets And Tasks Java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Snippets And Tasks Java.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Blockchain_Network_1/Block.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blockchain_Network_1/Block.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Blockchain_Network_1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blockchain_Network_3/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Blockchain_Network_3/Block.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blockchain_Network_3/Block.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Blockchain_Network_3/Blockchain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blockchain_Network_1/Blockchain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Blockchain_Network_3/BlockchainView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blockchain_Network_1/BlockchainView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Blockchain_Network_3/CreateBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blockchain_Network_1/CreateBlock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Blockchain_Network_3/SHA_256_hash.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blockchain_Network_1/SHA_256_hash.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Blockchain_Network_3/SimpleServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blockchain_Network_1/SimpleServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Blockchain_Network_3/SimpleServer1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blockchain_Network_1/SimpleServer1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/connect_sql/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/connect_sql_JDBC/connection_MySQL.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,20 +52,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/kristina/IdeaProjects/Snippets And Tasks Java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Java&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/kristina/Desktop/PROGRAMMING/4. Java DB/Spring Data /IMPORTANT/postgresql-42.6.0.jar",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.sourceCode.Java",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/Blockchain_Network_3" />
@@ -65,7 +78,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.N5_TEST_TASKS_IT._S6_Card_Strength_Program">
+  <component name="RunManager" selected="Application.connect_sql_JDBC.connection_MongoDB">
     <configuration name="N5_TEST_TASKS_IT._S6_Card_Strength_Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="N5_TEST_TASKS_IT._S6_Card_Strength_Program" />
       <module name="Snippets And Tasks Java" />
@@ -92,12 +105,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_S6_Longest_Common_Word" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="N5_TEST_TASKS_IT._S6_Longest_Common_Word" />
+    <configuration name="connect_sql_JDBC.connection_MySQL" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="connect_sql_JDBC.connection_MySQL" />
       <module name="Snippets And Tasks Java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="N5_TEST_TASKS_IT.*" />
+          <option name="PATTERN" value="connect_sql_JDBC.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -105,12 +118,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_S6_Sum_Divisible_By_Three_Recursion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="N5_TEST_TASKS_IT._S6_Sum_Divisible_By_Three_Recursion" />
+    <configuration name="connection_MongoDB" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="connect_sql_JDBC.connection_MongoDB" />
       <module name="Snippets And Tasks Java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="N5_TEST_TASKS_IT.*" />
+          <option name="PATTERN" value="connect_sql_JDBC.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -118,12 +131,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="connect_sql.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="connect_sql.Main" />
+    <configuration name="connection_PostgreSQL" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="connect_sql_JDBC.connection_PostgreSQL" />
       <module name="Snippets And Tasks Java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="connect_sql.*" />
+          <option name="PATTERN" value="connect_sql_JDBC.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -133,11 +146,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.connect_sql_JDBC.connection_MongoDB" />
+        <item itemvalue="Application.connection_PostgreSQL" />
         <item itemvalue="Application.N5_TEST_TASKS_IT._S6_Card_Strength_Program" />
         <item itemvalue="Application.N5_TEST_TASKS_IT._S6_Labyrinth_Escape" />
-        <item itemvalue="Application.N5_TEST_TASKS_IT._S6_Sum_Divisible_By_Three_Recursion" />
-        <item itemvalue="Application.N5_TEST_TASKS_IT._S6_Longest_Common_Word" />
-        <item itemvalue="Application.connect_sql.Main" />
+        <item itemvalue="Application.connect_sql_JDBC.connection_MySQL" />
       </list>
     </recent_temporary>
   </component>
@@ -179,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687961129181</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="tasks it">
+      <created>1689453657153</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1689453657153</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,7 +220,8 @@
     <MESSAGE value="add snippets and tasks in a gathered file" />
     <MESSAGE value="blockchain network test basic" />
     <MESSAGE value="some basic snippets" />
-    <option name="LAST_COMMIT_MESSAGE" value="some basic snippets" />
+    <MESSAGE value="tasks it" />
+    <option name="LAST_COMMIT_MESSAGE" value="tasks it" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -221,7 +242,7 @@
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/connect_sql/Main.java</url>
+          <url>file://$PROJECT_DIR$/src/connect_sql_JDBC/connection_MySQL.java</url>
           <line>29</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
